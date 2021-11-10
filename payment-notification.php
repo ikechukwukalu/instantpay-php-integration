@@ -3,7 +3,7 @@ $message = null;
 function send_curl()
 {
     if(isset($_GET['Ref']) && !empty(trim($_GET['Ref']))) {
-        $url = "https://sl.instantbillspay.com/instantpay/api/bill/refstatus?ref=" . $_GET['Ref'];
+        $url = "https://xx.instantbillspay.com/instantpay/api/bill/refstatus?ref=" . $_GET['Ref'];
         $ch = curl_init();
         curl_setopt($ch, CURLOPT_URL, $url);
         curl_setopt($ch, CURLOPT_CUSTOMREQUEST, "GET");
@@ -38,19 +38,6 @@ function send_curl()
             }
         }
     }
-    /*
-    return [
-        'status' => true, 
-        'message' => 'Payment Successful', 
-        'data' => 
-            [
-                'customer_name' => 'Kalu Ikechukwu', 
-                'email' => 'ikaykaly@gmail.com', 
-                'description' => 'Payment was made as at 10:30am', 
-                'amount' => '1000.00'
-            ]
-    ];
-    */
 }
 $message = send_curl();
 ?>

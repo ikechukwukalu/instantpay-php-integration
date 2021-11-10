@@ -23,7 +23,7 @@
             <div class="col-8 col-lg-8 mt-3">
                 <div class="container">
                     <!-- Change the country code before https:// -->
-                    <form id="make-payment" action="https://sl.instantbillspay.com/instantpay/payload/bill/payment"
+                    <form id="make-payment" action="https://xx.instantbillspay.com/instantpay/payload/bill/payment"
                         method="POST">
                         <label style="color:black">First Name*</label> <input type="text" id="firstname"
                             name="firstname" class="form-control" placeholder="Enter your first name" value="" required>
@@ -42,7 +42,7 @@
                         <input type="hidden" class="form-control" id="uniqueID" name="uniqueID"
                             value="<?php echo 'UID' . time() . rand(1000000000, 9999999999) . 'pay' ?>" required>
                         <!-- Add your company code on InstantBillsPay -->
-                        <input type="hidden" class="form-control" id="merchantID" name="merchantID" value="SL0900044"
+                        <input type="hidden" class="form-control" id="merchantID" name="merchantID" value="xxxxxxxxx"
                             required>
                         <!-- A unique string of characters will generated over make-hash.php file and inserted into this input  -->
                         <input type="hidden" class="form-control" id="hash" name="hash" value="" required>
